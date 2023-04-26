@@ -9,6 +9,7 @@ contract TokenTest is Test {
     Token t;
 
     function setUp() public {
+        vm.createSelectFork("https://rpc.ankr.com/eth");
         t = new Token();
     }
 
